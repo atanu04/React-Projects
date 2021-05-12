@@ -6,9 +6,9 @@ function ListComp({ list }) {
     <>
       {list.map((person) => {
         return (
-          <article key={person.id}>
+          <div key={person.id}>
             <PersonComp person={person} />
-          </article>
+          </div>
         );
       })}
     </>

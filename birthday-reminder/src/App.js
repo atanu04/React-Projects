@@ -1,13 +1,9 @@
-import ListComp from "./Components/ListComp";
-import data from "./data";
 import React from "react";
+import ContainerComp from "./Components/ContainerComp";
 function App() {
-  const [list, setList] = React.useState(data);
-
   return (
     <div className="App">
-      <h1>Birthday reminder</h1>
-      <ListComp list={list} />
+      <ContainerComp />
     </div>
   );
 }
