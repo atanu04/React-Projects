@@ -16,10 +16,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.App {
+.Tours {
   background-color: bisque;
   width: 70%;
   margin: auto;
   text-align: center;
   padding: 2rem;
+}
+.Loading {
+  text-align: center;
+  padding: 20%;
+}
+.title {
+  text-align: center;
+  margin: 2rem;
+  font-size: 50px;
+  font-weight: bold;
+}
+.underline {
+  width: 10rem;
+  height: 0.5rem;
+  background-color: cadetblue;
+  margin-left: auto;
+  margin-right: auto;
 }
