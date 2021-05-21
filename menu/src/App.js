@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import Categories from "./Categories";
+import items from "./data";
+import Menu from "./Menu";
+const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <section className="menu-section">
+        <div className="title">
+          <h1>Our menus</h1>
+          <div className="underline"></div>
+        </div>
+        <Categories categories={allCategories} />
+        <Menu items={items} />
+      </section>
+    </main>
   );
 }
 
